@@ -37,7 +37,12 @@
 
 		fetch("https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/5958dd45-9962-46b9-96da-1975e6d72fa1/classify/iterations/Iteration5/image", requestOptions)
 		  .then(response => response.json())
-		  .then(result => console.log(result))
+		  .then(result => {
+		  	//console.log(result["predictions"][0]["probability"]);
+		  	if(result["predictions"][0]["probability"] > 0.5){
+		  		console.log(result["predictions"][0]["probability"]);
+		  	}
+		  })
 		  .catch(error => console.log('error', error));
 
 	  });
