@@ -1,3 +1,14 @@
+/* Variables*/
+:root {
+    --color_1: #156576;
+    --color_2: #34B1AC;
+    --color_3: #7BC789;
+    --color_4: #D8C39D;
+}
+
+
+/* GLOBALES */
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -12,23 +23,19 @@ body {
     font-size: 1.6rem;
 }
 
-/* Globales*/
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
 h1 {
     font-size: 5rem;
-    text-align: center;
 }
 
 h3 {
     font-size: 3rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
 }
 
@@ -36,6 +43,29 @@ a {
     text-decoration: none;
     color: #000
 }
+
+/* ESPECIFICOS */
+.navegacion {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+.logo{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding: 1em 2em;
+}
+/* Nav */
+.dropdown-content a{
+    padding: 1.2em;
+}
+
+
+
+
 
 .contenedor {
     max-width: 100%;
@@ -197,15 +227,15 @@ a {
     margin-top: 20em;
 }
 
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+/*© 2022 GitHub, Inc.*/
+/*Terms*/
+/*Privacy*/
+/*Security*/
+/*Status*/
+/*Docs*/
+/*Contact GitHub*/
+/*Pricing*/
+/*API*/
+/*Training*/
+/*Blog*/
+/*About*/
