@@ -12,8 +12,23 @@ body {
     font-size: 1.6rem;
     color: #fff;
     background-image: url(https://estaticos.muyinteresante.es/uploads/images/article/60be9a8e5bafe8caa542e41c/oceano-1_1.jpg);
+    background-attachment: fixed;
+    overflow: scroll;
     background-repeat: no-repeat ;
     background-size: cover;
+}
+
+.navegacion{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.dropdown-content{
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+
 }
 
 /* Globales*/
