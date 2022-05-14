@@ -1,3 +1,12 @@
+:root{
+    --color_1: #156576;
+    --color_2: #34B1AC;
+    --color_3: #7BC789;
+    --color_4: #D8C39D;
+}
+
+/* Corpus*/
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
