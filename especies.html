@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-	@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
-
+	@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
         body{
             background-image: url(https://www.ecologistasenaccion.org/wp-content/uploads/2019/09/tortuga.jpg);
         }
@@ -60,12 +59,13 @@
 		  cursor:pointer;
 		}
 
-		h3{
-			font-family: 'Over the Rainbow';
+		.especieT{
+			font-family: Caveat;
 			text-align: center;
 			transform: rotate(-3deg);
-			font-size: 25px;
+			font-size: 40px;
 			font-weight: bold;
+            color: #000;
 		}
     </style>
     
@@ -116,7 +116,7 @@
                     <img id="file-ip-1-preview">				
                 </div>
     
-                <h3 id="demo"></h3>
+                <p class="especieT" id="demo"></p>
     
                 <label for="file-ip-1">Upload Image</label>
                 <input type="file" id="file-ip-1"/>
