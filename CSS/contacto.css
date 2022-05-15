@@ -41,4 +41,48 @@ a {
     display: block;
 }
 
+.leyenda2 {
+    max-width: 90em;
+    margin-left: 31em;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5em;
+    padding-top: 3em;
+    opacity: 90%;
+    border-radius: 3%;
+    color:#156576;
+    }
 
+    .leyenda2 h2{
+    font-size: 3em;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: .4em;
+    }
+
+    #correo1{
+    font-size: 1em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+
+    #contraseña1{
+    font-size: 1em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+
+    .leyenda2 a{
+    font-size: .8em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+    .leyenda2 a:hover{
+    color: #34B1AC;
+    }
