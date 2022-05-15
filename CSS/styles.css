@@ -1,9 +1,7 @@
 /* Variables*/
-@font-face {
-    font-family: Abang;
-    src: url(Abang.otf);
-}
-:root {
+@import url('http://fonts.cdnfonts.com/css/abang');
+
+  :root {
     --color_1: #156576;
     --color_2: #34B1AC;
     --color_3: #7BC789;
@@ -36,10 +34,9 @@ body {
 }
 
 
-.logotipo{
-    font-family: Abang;
+.logotipo h1{
+    font-family: 'Abang', sans-serif;
     color: #7BC789;
-    transition: 0.5s;
 }
 
 
@@ -72,6 +69,9 @@ h2 {
 a {
     text-decoration: none;
     color: #fff;
+}
+p {
+    text-align: justify;
 }
 
 /* ESPECIFICOS */
