@@ -268,12 +268,6 @@ a {
     margin-bottom: .3em;
 }
 
-.leyenda p{
-    -webkit-text-stroke:rgba(0, 39, 44, 0.555), 1p;
-
-}
-
-
 .footer{
     width: 70em;
     text-align: center;
@@ -283,7 +277,7 @@ a {
 .sec1{
     width: 25em;
     margin-top: 30em;
-    margin-left: 30em;
+    margin-left: 31.5em;
     position: absolute;
     display: flex;
     padding: 1em;
@@ -296,7 +290,7 @@ a {
 }
 .sec1 a:hover{
     color:#D8C39D;
-    scale: 125%;
+    transform:scale(105%)
 }
 
 .mapa{
@@ -318,10 +312,6 @@ a {
         margin-bottom: .3em;
 }
     
-.mapa p{
-        -webkit-text-stroke:rgba(0, 39, 44, 0.555), 1p;
-    }
-
 .mapaInt{
     border-radius: 5%;
 }

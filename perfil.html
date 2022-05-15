@@ -14,14 +14,53 @@
             background-image: url(https://p0.pikist.com/photos/894/651/diving-ocean-underwater-sea-diver-ok-all-right-water-bubbles.jpg);
         }
 
-    .formulario{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 500px;
-    height: 800px;
+    .leyenda2 {
+    background-color: #D8C39D;
+    max-width: 90em;
+    margin-left: 32em;
     position: absolute;
-    margin-left: 525px;
-    color: rgb(224, 145, 201);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5em;
+    padding-top: 3em;
+    opacity: 90%;
+    border-radius: 3%;
+    color:#156576;
     }
+
+    .leyenda2 h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+
+    #correo1{
+    font-size: 1em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+
+    #contraseña1{
+    font-size: 1em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+
+    .leyenda2 a{
+    font-size: .8em;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: .3em;
+    }
+    .leyenda2 a:hover{
+    color: #34B1AC;
+    }
+
 
     </style>
     
@@ -65,11 +104,16 @@
 </header>
 
 <main>
-    <div class="leyenda" id="inicio">
+    <div class="leyenda2" id="inicio">
         <h2>Iniciar sesion</h2><br>
     
         <label for="correo1">Correo electrónico:</label><br>
         <input type="email" id="correo1" name="correo1"><br><br>
+
+        <label for="correo1">Contraseña:</label><br>
+        <input type="password" id="contraseña1" name="contraseña1"><br>
+        <a href="">Olvide la contraseña</a><br>
+        <a href="">Registrarse</a>
 
     </div>
     
