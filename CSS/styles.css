@@ -302,6 +302,7 @@ a {
 .mapa{
         max-width: 60em;
         margin-left: 23em;
+        margin-top: -3em;
         position: absolute;
         flex-direction: row;
         justify-content: center;
