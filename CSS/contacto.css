@@ -73,22 +73,26 @@ a {
 }
 
 .leyenda {
-    max-width: 60em;
+    max-width: 70em;
     margin-left: 12em;
     position: absolute;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 6em;
     text-align: justify;
+    background-color: black;
+    padding: 3em;
+    opacity: 60%;
+    border-radius: 1%;
+    margin-top: 5.5em;
 }
 
 .leyenda h1{
     font-size: 5em;
     text-align: center;
     font-weight: lighter;
-    margin-bottom: .3em;
+    margin-top: -.5em;
 }
 
 .iconos{
@@ -98,7 +102,7 @@ a {
     align-items: center;
     width: 100%;
     padding: 25px;
-    margin-top: 23em;
+    margin-top: 25em;
 }
 
 .iconos a{
