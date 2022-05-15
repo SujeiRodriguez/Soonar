@@ -12,7 +12,9 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
-    background-image: url(http://3.bp.blogspot.com/-fx6Y8DMOgDk/U3IWJT62Z2I/AAAAAAAA1rg/9L2pqeqI0XQ/s1600/Oceanografia.jpg);
+    background-image: url(https://images8.alphacoders.com/588/588592.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Globales*/
@@ -36,7 +38,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #000
+    color: #fff;
 }
 
 .contenedor {
@@ -99,7 +101,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80em;
     flex-direction: column;
 }
 
@@ -114,6 +115,7 @@ h2{
 
 .info{
     width: 70%;
+    font-size: 20px;
 }
 
 
