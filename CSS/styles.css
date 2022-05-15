@@ -35,15 +35,13 @@ body {
     /*background-position-y: -10em;*/
 }
 
-.navegacion{
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /*align-items: center;*/
-}
+
 .logotipo{
     font-family: Abang;
+    color: #7BC789;
+    transition: 0.5s;
 }
+
 
 .navegacionder{
     display: flex;
@@ -78,11 +76,13 @@ a {
 
 /* ESPECIFICOS */
 .navegacion {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*align-items: center;*/
 }
 .logo{
     display: grid;
