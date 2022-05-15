@@ -34,7 +34,7 @@ body {
 }
 
 
-.logotipo h1{
+.logo h1{
     font-family: 'Abang', sans-serif;
     color: #7BC789;
 }
@@ -73,28 +73,6 @@ a {
 p {
     text-align: justify;
 }
-
-/* ESPECIFICOS */
-.navegacion {
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /*align-items: center;*/
-}
-.logo{
-    display: grid;
-    justify-content: start;
-    align-items: center;
-    padding: 1em 2em;
-}
-/* Nav */
-.navegacionder a{
-    padding: 1.2em;
-}
-
 
 
 .contenedor {
