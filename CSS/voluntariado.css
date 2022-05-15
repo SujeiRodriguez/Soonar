@@ -20,21 +20,6 @@ body {
     /*background-position-y: -10em;*/
 }
 
-.logotipo{
-    font-family: Abang;
-    color: #7BC789;
-    transition: 0.5s;
-}
-
-.navegacionder{
-    display: flex;
-    padding: 1em;
-    gap: 1em;
-}
-.drophown{
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
@@ -107,4 +92,7 @@ footer{
     transform:scale(105%)
 }
 
-
+.foto{
+    width: 250px;
+    height: 300px;
+}
