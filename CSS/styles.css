@@ -22,9 +22,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     color: #fff;
-    background-image: url(https://cdn.forbes.com.mx/2021/04/cambio-climatico-Belkin-1-e1623363156415.jpg);
+    background-image: url(https://www.elagoradiario.com/wp-content/uploads/2019/07/cueva-agua-1140x600.jpg);
     background-attachment: fixed;
-    overflow: scroll;
     background-repeat: no-repeat ;
     background-size: cover;
 }
@@ -38,7 +37,8 @@ body {
 .dropdown-content{
     display: flex;
     padding: 1em;
-    gap: 1em;}
+    gap: 1em;
+}
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
@@ -90,16 +90,26 @@ a {
 }
 
 .baseLogo {
-    margin-left: 1em;
     margin-top: 1em;
+    margin-left: 1em;
     position: absolute;
 }
 
 #mediaLuna {
-    margin-top: 0;
-    margin-left: -22px;
+    margin-top: 0.25em;
+    margin-left: -1.5em;
     opacity: 50%;
 }
+
+#logoSoonar {
+    margin-top: 4.5em;
+    margin-left: 6em;
+    opacity: 80%;
+    position: absolute;
+    animation: glow 2s linear infinite;
+    
+}
+
 
 .logo {
     position: absolute;
@@ -127,7 +137,7 @@ a {
     background: #00a2ff;
     border-radius: 50%;
     filter: blur(2px);
-    animation: glow 1s linear infinite;
+    animation: glow 2s linear infinite;
 }
 
 .logo:after
@@ -141,7 +151,7 @@ a {
     background: #00a2ff;
     border-radius: 50%;
     filter: blur(2px);
-    animation: glow 1s linear infinite;
+    animation: glow 2s linear infinite;
 }
 
 .logo li:nth-child(1),
@@ -240,21 +250,51 @@ a {
 }
 
 
-.leyenda{
-    margin-top: 20em;
+.leyenda {
+    max-width: 60em;
+    margin-left: 12em;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6em;
 }
 
-/**/
+.leyenda h1{
+    font-size: 5em;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: .3em;
+}
 
-/*© 2022 GitHub, Inc.*/
-/*Terms*/
-/*Privacy*/
-/*Security*/
-/*Status*/
-/*Docs*/
-/*Contact GitHub*/
-/*Pricing*/
-/*API*/
-/*Training*/
-/*Blog*/
-/*About*/
+.leyenda p{
+    -webkit-text-stroke:rgba(0, 39, 44, 0.555), 1p;
+
+}
+
+
+.footer{
+    width: 70em;
+    text-align: center;
+    position: absolute;
+}
+
+.sec1{
+    width: 25em;
+    margin-top: 30em;
+    margin-left: 30em;
+    position: absolute;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.sec1 a{
+    color: #156576;
+    font-size: 1.2em;
+}
+.sec1 a:hover{
+    color:#D8C39D;
+    scale: 125%;
+}
