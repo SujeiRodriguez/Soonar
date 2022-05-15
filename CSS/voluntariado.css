@@ -10,12 +10,33 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    color: #fff;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.60),
+    rgba(5, 7, 12, 0.60)),
+    url(https://www.portalambiental.com.mx/sites/default/files/media/2019/05/sargazo_20-05.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    /*background-position-y: -10em;*/
 }
 
-/* Globales*/
-h1,
-h2,
-h3 {
+.logotipo{
+    font-family: Abang;
+    color: #7BC789;
+    transition: 0.5s;
+}
+
+.navegacionder{
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+.drophown{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -27,18 +48,84 @@ h3 {
     font-size: 3rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
 }
 
 a {
     text-decoration: none;
-    color: #000
+    color: #fff;
 }
+
+/* ESPECIFICOS */
+.navegacion {
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*align-items: center;*/
+}
+.logo{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding: 1em 2em;
+}
+/* Nav */
+.navegacionder a{
+    padding: 1.2em;
+}
+
 
 .contenedor {
     max-width: 100%;
     display: block;
+}
+
+.leyenda {
+    max-width: 60em;
+    margin-left: 12em;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6em;
+}
+
+.leyenda h1{
+    font-size: 5em;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: .3em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.sec1{
+    width: 25em;
+    margin-top: 30em;
+    margin-left: 31.5em;
+    position: absolute;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.sec1 a{
+    color: #156576;
+    font-size: 1.2em;
+}
+.sec1 a:hover{
+    color:#D8C39D;
+    transform:scale(105%)
 }
 
 
