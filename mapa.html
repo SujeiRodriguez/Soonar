@@ -31,11 +31,11 @@
             background:#fff;
             box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
                         3px 3px 7px rgba(94, 104, 121, 0.377);
+            border: solid 5px #000;
 		}
 
 		.form-input img {
             width:100%;
-            display:none;
             margin-bottom:30px;
 		}
 
@@ -67,7 +67,24 @@
 			font-size: 40px;
 			font-weight: bold;
             color: #000;
-		}        
+		}      
+        
+        .section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 80em;
+            flex-direction: column;
+        }
+
+        .mapa{
+            width: 85%;
+            height: 600px;
+        }
+
+        h2{
+            font-size: 45px;
+        }
     </style>
     
 </head>
@@ -105,15 +122,13 @@
 
 <main>
 
-    <div class="mapa">
+    <div class="section">
         <h2>Mapa interactivo</h2>
-        <p>Ubicación de especies y zonas de contaminación</p>
-        <iframe class="mapaInt" src="https://www.google.com/maps/d/embed?mid=1H536WEfpTIekhYqG0eRORQmKU8lehJRy&ehbc=2E312F" width="640" height="480"></iframe> 
+        <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=1H536WEfpTIekhYqG0eRORQmKU8lehJRy&ehbc=2E312F"></iframe> 
     </div>
 
-    <div class="leyenda2">
+    <div class="section">
         <h1 class="principalh1">¿Qué especie es?</h1>
-        <!-- <h2>Oceanos de México</h2> -->
         <p>Hay veces que cuando miras el oceano aparecen animales fantasticos, pero no sabes como se llaman. Es por eso que nuestro buscador de especies de dice cual es el nombre de ser peculiar que has observado.</p>
 
         <p>Solo carga una imagen en la parte de abajo para descubrir de que especie se trata</p>
@@ -121,7 +136,7 @@
         <div class="center">
             <div class="form-input">
                 <div class="preview">
-                    <img id="file-ip-1-preview">				
+                    <img id="file-ip-1-preview" src="./imagenes/axolote.gif">				
                 </div>
     
                 <p class="especieT" id="demo"></p>
