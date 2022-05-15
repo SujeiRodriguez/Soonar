@@ -147,29 +147,6 @@ footer{
     transform:scale(105%)
 }
 
-/* .mapa{
-        max-width: 60em;
-        margin-left: 23em;
-        margin-top: -3em;
-        position: absolute;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 0;
-}
-    
-.mapa h2{
-        font-size: 2em;
-        text-align: center;
-        font-weight: lighter;
-        margin-bottom: .3em;
-}
-    
-.mapaInt{
-    border-radius: 5%;
-} */
-
 .mapa:hover{
     box-shadow: 0 7px 30px 2px rgb(199, 199, 243);
     transform: scale(103%);
