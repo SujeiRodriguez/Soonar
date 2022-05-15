@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -10,6 +12,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    background-image: url(http://3.bp.blogspot.com/-fx6Y8DMOgDk/U3IWJT62Z2I/AAAAAAAA1rg/9L2pqeqI0XQ/s1600/Oceanografia.jpg);
 }
 
 /* Globales*/
@@ -39,6 +42,78 @@ a {
 .contenedor {
     max-width: 100%;
     display: block;
+}
+
+.center {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.form-input {
+    width:350px;
+    padding:20px;
+    background:#fff;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                3px 3px 7px rgba(94, 104, 121, 0.377);
+    border: solid 5px #000;
+}
+
+.form-input img {
+    width:100%;
+    margin-bottom:30px;
+}
+
+.form-input input {
+    display:none;
+}
+
+.form-input label {
+    display:block;
+    width:45%;
+    height:45px;
+    margin-left: 25%;
+    line-height:50px;
+    text-align:center;
+    background:#1172c2;
+    color:#fff;
+    font-size:15px;
+    font-family:"Open Sans",sans-serif;
+    text-transform:Uppercase;
+    font-weight:600;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.especieT{
+    font-family: Caveat;
+    text-align: center;
+    transform: rotate(-3deg);
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}      
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80em;
+    flex-direction: column;
+}
+
+.mapa{
+    width: 85%;
+    height: 600px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.info{
+    width: 70%;
 }
 
 

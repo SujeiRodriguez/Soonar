@@ -7,85 +7,9 @@
     <title>Soonar</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/ecosistema.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-
-        body{
-            background-image: url(http://3.bp.blogspot.com/-fx6Y8DMOgDk/U3IWJT62Z2I/AAAAAAAA1rg/9L2pqeqI0XQ/s1600/Oceanografia.jpg);
-        }
-
-        .center {
-            height:100%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-
-		}
-		.form-input {
-            width:350px;
-            padding:20px;
-            background:#fff;
-            box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
-                        3px 3px 7px rgba(94, 104, 121, 0.377);
-            border: solid 5px #000;
-		}
-
-		.form-input img {
-            width:100%;
-            margin-bottom:30px;
-		}
-
-		.form-input input {
-		    display:none;
-		}
-
-		.form-input label {
-            display:block;
-            width:45%;
-            height:45px;
-            margin-left: 25%;
-            line-height:50px;
-            text-align:center;
-            background:#1172c2;
-            color:#fff;
-            font-size:15px;
-            font-family:"Open Sans",sans-serif;
-            text-transform:Uppercase;
-            font-weight:600;
-            border-radius:5px;
-            cursor:pointer;
-		}
-
-		.especieT{
-			font-family: Caveat;
-			text-align: center;
-			transform: rotate(-3deg);
-			font-size: 40px;
-			font-weight: bold;
-            color: #000;
-		}      
-        
-        .section{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 80em;
-            flex-direction: column;
-        }
-
-        .mapa{
-            width: 85%;
-            height: 600px;
-        }
-
-        h2{
-            font-size: 45px;
-        }
-    </style>
     
 </head>
 <body>
@@ -129,9 +53,12 @@
 
     <div class="section">
         <h1 class="principalh1">¿Qué especie es?</h1>
-        <p>Hay veces que cuando miras el oceano aparecen animales fantasticos, pero no sabes como se llaman. Es por eso que nuestro buscador de especies de dice cual es el nombre de ser peculiar que has observado.</p>
 
-        <p>Solo carga una imagen en la parte de abajo para descubrir de que especie se trata</p>
+        <div class="info">
+            <p>Hay veces que cuando miras el oceano aparecen animales fantasticos, pero no sabes como se llaman. Es por eso que nuestro buscador de especies de dice cual es el nombre de ser peculiar que has observado.</p>
+
+            <p>Solo carga una imagen en la parte de abajo para descubrir de que especie se trata</p>
+        </div>        
 
         <div class="center">
             <div class="form-input">
@@ -155,14 +82,13 @@
 
 
 
-<footer class="footer">
+<footer>
 
-
-    <section class="sec1">
+    <div class="iconos">
         <a href=""><i class="fa-brands fa-facebook-square"></i></a><br>
         <a href=""><i class="fa-brands fa-instagram"></i></a><br>
         <a href=""><i class="fa-solid fa-address-card"></i></a>
-    </section>
+    </div>       
 
 </footer>
 
