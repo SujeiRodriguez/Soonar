@@ -155,7 +155,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding-top: 0em;
+        padding-top: 0;
 }
     
 .mapa h2{
@@ -170,7 +170,7 @@ a {
 }
 
 .mapaInt:hover{
-    box-shadow: 0px 7px 30px 2px rgb(199, 199, 243);
+    box-shadow: 0 7px 30px 2px rgb(199, 199, 243);
     transform: scale(103%);
     z-index: 100;
 }
