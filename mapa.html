@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soonar</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,11 +11,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
         body{
             background-image: url(http://3.bp.blogspot.com/-fx6Y8DMOgDk/U3IWJT62Z2I/AAAAAAAA1rg/9L2pqeqI0XQ/s1600/Oceanografia.jpg);
         }
 
-        
+        .center {
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+		}
+		.form-input {
+            width:350px;
+            padding:20px;
+            background:#fff;
+            box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                        3px 3px 7px rgba(94, 104, 121, 0.377);
+		}
+
+		.form-input img {
+            width:100%;
+            display:none;
+            margin-bottom:30px;
+		}
+
+		.form-input input {
+		    display:none;
+		}
+
+		.form-input label {
+            display:block;
+            width:45%;
+            height:45px;
+            margin-left: 25%;
+            line-height:50px;
+            text-align:center;
+            background:#1172c2;
+            color:#fff;
+            font-size:15px;
+            font-family:"Open Sans",sans-serif;
+            text-transform:Uppercase;
+            font-weight:600;
+            border-radius:5px;
+            cursor:pointer;
+		}
+
+		.especieT{
+			font-family: Caveat;
+			text-align: center;
+			transform: rotate(-3deg);
+			font-size: 40px;
+			font-weight: bold;
+            color: #000;
+		}        
     </style>
     
 </head>
@@ -47,7 +98,6 @@
         <div class="navegacionder">
             <a href="./index.html">Inicio</a>
             <a href="./mapa.html">Ecosistema</a>
-            <a href="./especies.html">Especies</a>
             <a href="./voluntariado.html">Voluntariado</a>
         </div>
     </nav>
@@ -59,6 +109,31 @@
         <h2>Mapa interactivo</h2>
         <p>Ubicación de especies y zonas de contaminación</p>
         <iframe class="mapaInt" src="https://www.google.com/maps/d/embed?mid=1H536WEfpTIekhYqG0eRORQmKU8lehJRy&ehbc=2E312F" width="640" height="480"></iframe> 
+    </div>
+
+    <div class="leyenda2">
+        <h1 class="principalh1">¿Qué especie es?</h1>
+        <!-- <h2>Oceanos de México</h2> -->
+        <p>Hay veces que cuando miras el oceano aparecen animales fantasticos, pero no sabes como se llaman. Es por eso que nuestro buscador de especies de dice cual es el nombre de ser peculiar que has observado.</p>
+
+        <p>Solo carga una imagen en la parte de abajo para descubrir de que especie se trata</p>
+
+        <div class="center">
+            <div class="form-input">
+                <div class="preview">
+                    <img id="file-ip-1-preview">				
+                </div>
+    
+                <p class="especieT" id="demo"></p>
+    
+                <label for="file-ip-1">Upload Image</label>
+                <input type="file" id="file-ip-1"/>
+                
+            </div>
+        </div>
+
+    </div>
+        
     </div>
         
 </main>
@@ -75,5 +150,7 @@
     </section>
 
 </footer>
+
+<script src="./js/especies.js"></script>
 </body>
 </html>
