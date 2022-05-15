@@ -34,7 +34,7 @@ body {
 }
 
 
-.logotipo h1{
+.logo h1{
     font-family: 'Abang', sans-serif;
     color: #7BC789;
 }
@@ -72,28 +72,29 @@ a {
 }
 p {
     text-align: justify;
+
 }
 
-/* ESPECIFICOS */
-.navegacion {
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /*align-items: center;*/
-}
-.logo{
-    display: grid;
-    justify-content: start;
-    align-items: center;
-    padding: 1em 2em;
-}
-/* Nav */
-.navegacionder a{
-    padding: 1.2em;
-}
+/*!* ESPECIFICOS *!*/
+/*.navegacion {*/
+/*    grid-gap: 1rem;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*    padding: 1em;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 1fr);*/
+/*    !*align-items: center;*!*/
+/*}*/
+/*.logo{*/
+/*    display: grid;*/
+/*    justify-content: start;*/
+/*    align-items: center;*/
+/*    padding: 1em 2em;*/
+/*}*/
+/*!* Nav *!*/
+/*.navegacionder a{*/
+/*    padding: 1.2em;*/
+/*}*/
 
 
 
@@ -104,9 +105,10 @@ p {
 
 
 .leyenda {
+    /*display:flex;*/
     max-width: 60em;
     margin-left: 12em;
-    position: absolute;
+    /*position: absolute;*/
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -128,14 +130,21 @@ footer{
     margin: 5px;
 }
 
-.sec1{
+.sec2{
     width: 25em;
-    margin-top: 30em;
-    margin-left: 31.5em;
-    position: absolute;
+    /*margin-top: 30em;*/
+    /*margin-left: 31.5em;*/
+    /*position: absolute;*/
     display: flex;
     padding: 1em;
     gap: 1em;
+    align-items: center;
+    justify-items: center;
+    color:#156576;
+}
+.sec2 a{
+    color: #156576;
+
 }
 
 .sec1 a{

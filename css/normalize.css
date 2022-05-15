@@ -51,12 +51,12 @@ a {
 }
 /**Header**/
 .logo{
-    
+
     display: inline-block;
     top: 0;
     left: 0;
     height: 80px;
-    width: 30%;       
+    width: 30%;
 }
 .logo a{
     position: relative;
@@ -111,7 +111,7 @@ nav a:before{
   }
   nav a:hover:before{
     animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-  
+
   }
   @keyframes in{
     0%{
@@ -147,7 +147,7 @@ nav a:before{
       transform:translateY(0);
     }
   }
-  
+
   @for $i from 1 through 5 {
     nav a:nth-child(#{$i}){
       animation:show .2s #{$i*0.1+1}s ease 1 both;
