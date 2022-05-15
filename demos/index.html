@@ -4,25 +4,111 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+
+	<style>
+
+		@font-face{
+			font-family: Abang;
+			src: url('../fonts/Abang.otf');
+		}
+
+		body {
+		  margin:0px;
+		  height:100vh;
+		  background: #1283da;
+		}
+
+		.center {
+		  height:100%;
+		  display:flex;
+		  align-items:center;
+		  justify-content:center;
+
+		}
+		.form-input {
+		  width:350px;
+		  padding:20px;
+		  background:#fff;
+		  box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+		              3px 3px 7px rgba(94, 104, 121, 0.377);
+		}
+
+		.form-input img {
+		  width:100%;
+		  display:none;
+		  margin-bottom:30px;
+		}
+
+		.form-input input {
+		  display:none;
+		}
+
+		.form-input label {
+		  display:block;
+		  width:45%;
+		  height:45px;
+		  margin-left: 25%;
+		  line-height:50px;
+		  text-align:center;
+		  background:#1172c2;
+		  color:#fff;
+		  font-size:15px;
+		  font-family:"Open Sans",sans-serif;
+		  text-transform:Uppercase;
+		  font-weight:600;
+		  border-radius:5px;
+		  cursor:pointer;
+		}
+
+		h2{
+			font-family: Abang;
+			text-align: center;
+			transform: rotate(-2deg);
+			font-size: 45px;
+			font-weight: bold;
+		}
+
+	</style>
+
 </head>
+
 <body>
 	
-	<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12BHUGjU1UaE8LF75F2ucGNgPfMdCy9Kq&ehbc=2E312F" width="640" height="480">
-		
-	</iframe> -->
+	<div class="center">
+		<div class="form-input">
+			<div class="preview">
+				<img id="file-ip-1-preview">				
+			</div>
+
+			<h2 id="demo"></h2>
+
+			<label for="file-ip-1">Upload Image</label>
+			<input type="file" id="file-ip-1"/>
+			
+		</div>
+	</div>
+
 	<input type="file" id="archivo"/>
 	
 	<script type="text/javascript">
-	const input=document.getElementById("archivo")
-	input .addEventListener("change", async (event) => {
-	  const archivo = event.target.files[0];
 
-	  const arrayBuffer = await archivo.arrayBuffer()
-	  // arweave.createTransaction({data: arrayBuffer},key)
-	  console.log('Es un arraybuffer?',arrayBuffer instanceof ArrayBuffer);
+	//toma el archivo del DOM
+	const input=document.getElementById("file-ip-1")
+	const preview = document.getElementById("file-ip-1-preview")
 
+	//funcion para poder realizar cambios al input
+	input.addEventListener("change", async (event) => {
+		
+		document.getElementById("demo").innerHTML = " ";
 
-	  	var myHeaders = new Headers();
+		const archivo = event.target.files[0];
+		const arrayBuffer = await archivo.arrayBuffer()
+		var src = URL.createObjectURL(event.target.files[0]);
+		preview.src = src;
+		preview.style.display = "block";
+		  
+	  	//Consulta a la API de prediccion de de Custom Vision
+		var myHeaders = new Headers();
 		myHeaders.append("Prediction-Key", "89568e35e94d4afca78f4d233110c877");
 		myHeaders.append("Content-Type", "application/json");
 
@@ -35,18 +121,23 @@
 		  redirect: 'follow'
 		};
 
-		fetch("https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/5958dd45-9962-46b9-96da-1975e6d72fa1/classify/iterations/Iteration5/image", requestOptions)
-		  .then(response => response.json())
-		  .then(result => {
+		fetch("https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/5958dd45-9962-46b9-96da-1975e6d72fa1/classify/iterations/Iteration8/image", requestOptions)
+		.then(response => response.json())
+		.then(result => {
 
+		  	//realiza la busqueda de la mayor probabilidad
 		  	maxValue = Math.max(...result.predictions.map(x=>x.probability));
 		  	res=result.predictions.filter(x=>x.probability==maxValue)
-		  	console.log(res[0]["tagName"])
-		  	
-		  })
-		  .catch(error => console.log('error', error));
+		  	document.getElementById("demo").innerHTML = res[0]["tagName"];
+		  	//console.log(res[0]["tagName"])
 
-	  });
+		  	//Muestreo de base de datos para traer información
+
+			  	
+		})
+		.catch(error => console.log('error', error));
+
+	});
 	</script>
 
 </body>
