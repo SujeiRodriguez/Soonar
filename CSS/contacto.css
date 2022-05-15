@@ -10,6 +10,14 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    background-image: url(../bk/6.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    /*background-position-y: -10em;*/   
 }
 
 /* Globales*/
@@ -33,56 +41,68 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #000
+    color: #fff;
 }
+
+/* ESPECIFICOS */
+.navegacion {
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*align-items: center;*/
+}
+.logo{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding: 1em 2em;
+}
+/* Nav */
+.navegacionder a{
+    padding: 1.2em;
+}
+
+
 
 .contenedor {
     max-width: 100%;
     display: block;
 }
 
-.leyenda2 {
-    max-width: 90em;
-    margin-left: 31em;
+.leyenda {
+    max-width: 60em;
+    margin-left: 12em;
     position: absolute;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5em;
-    padding-top: 3em;
-    opacity: 90%;
-    border-radius: 3%;
-    color:#156576;
-    }
+    padding-top: 6em;
+    text-align: justify;
+}
 
-    .leyenda2 h2{
-    font-size: 3em;
+.leyenda h1{
+    font-size: 5em;
     text-align: center;
     font-weight: lighter;
-    margin-bottom: .4em;
-    }
-
-    #correo1{
-    font-size: 1em;
-    text-align: left;
-    font-weight: lighter;
     margin-bottom: .3em;
-    }
+}
 
-    #contraseña1{
-    font-size: 1em;
-    text-align: left;
-    font-weight: lighter;
-    margin-bottom: .3em;
-    }
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    margin-top: 23em;
+}
 
-    .leyenda2 a{
-    font-size: .8em;
-    text-align: left;
-    font-weight: lighter;
-    margin-bottom: .3em;
-    }
-    .leyenda2 a:hover{
-    color: #34B1AC;
-    }
+.iconos a{
+    font-size: 25px;
+    margin: 10px;
+    color: #fff;
+}
