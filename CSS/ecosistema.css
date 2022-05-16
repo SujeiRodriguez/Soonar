@@ -124,13 +124,10 @@ h2{
 }
 
 .baseLogo {
-    margin-top: 12em;
-    margin-left: 23em;
+    margin-top: -11em;
+    margin-left: 67em;
     position: absolute;
 }
-
-
-
 
 .logoR {
     position: absolute;
@@ -139,8 +136,8 @@ h2{
     transform: translate(-50%,-50%);
     margin: 0;
     padding: 0;
-    width: 16em;
-    height: 16em;
+    width: 18em;
+    height: 18em;
     border-radius: 50%;
     background-size: cover;
     box-shadow: inset 0 0 5em rgba(0, 225, 255, 0.555);
@@ -178,13 +175,15 @@ h2{
 .logoR li:nth-child(1),
 .logoR li:nth-child(2),
 .logoR li:nth-child(3),
-.logoR li:nth-child(4) 
+.logoR li:nth-child(4), 
+.logoR li:nth-child(9),
+.logoR li:nth-child(10) 
 {
     list-style: none;
     position: absolute;
     top:50%;
     height: 1px;
-    width: 100%;
+    width: 18em;
     background: rgb(103, 216, 236);
     border-radius: 50%;
 }
@@ -195,16 +194,27 @@ h2{
 }
 .logoR li:nth-child(3)
 {
-    transform: rotate(45deg);
+    transform: rotate(120deg);
 }
 .logoR li:nth-child(4)
 {
-    transform: rotate(-45deg);
+    transform: rotate(-120deg);
+}
+.logoR li:nth-child(9)
+{
+    transform: rotate(150deg);
+}
+.logoR li:nth-child(10)
+{
+    transform: rotate(-150deg);
 }
 
 .logoR li:nth-child(5),
 .logoR li:nth-child(6),
-.logoR li:nth-child(7)
+.logoR li:nth-child(7),
+.logoR li:nth-child(11),
+.logoR li:nth-child(12),
+.logoR li:nth-child(13)
 {
     list-style: none;
     position: absolute;
@@ -217,19 +227,35 @@ h2{
 }
 .logoR li:nth-child(5)
 {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
 }
 .logoR li:nth-child(6)
 {
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
 }
 .logoR li:nth-child(7)
+{
+    width: 9em;
+    height: 9em;
+}
+.logoR li:nth-child(11)
 {
     width: 12em;
     height: 12em;
 }
+.logoR li:nth-child(12)
+{
+    width: 15em;
+    height: 15em;
+}
+.logoR li:nth-child(13)
+{
+    width: 12em;
+    height: 12em;
+}
+
 .logoR li:nth-child(8)
 {
     list-style: none;
